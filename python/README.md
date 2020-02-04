@@ -4,6 +4,7 @@
 
 Python 2 isn't supported since january 1st 2020.
 
+---
 From a base to another one:
 ```python
 >>> bin(10)
@@ -16,6 +17,7 @@ From a base to another one:
 10
 ```
 
+---
 Protection of fields in classes:
 ```python
 class Foo():
@@ -26,6 +28,7 @@ class Foo():
         pass
 ```
 
+---
 Get ascii value of character and vice-versa
 ```python
 >>> ord('a')
@@ -34,24 +37,30 @@ Get ascii value of character and vice-versa
 'a'
 ```
 
+---
 Return multiple elements in a single return statement:
 ```python
 def returnMany():
     return 1, 2, 3, 4
+
+a, b, c, d = returnMany()
 ```
 
+---
 Split a string:
 ```python
 >>> "hello world".split(" ")
 ['hello', 'world']
 ```
 
+---
 Define explicitly types in function:
 ```python
 def add(a: int, b: int = 0) -> int:
     return a + b
 ```
 
+---
 Create a string from a list with separator between each elements
 ```python
 >>> ", ".join(["Daleks", "Cybermen", "The Master"])
@@ -62,9 +71,11 @@ Create a string from a list with separator between each elements
 
 ## Some cool features
 
-venv:
+virtualenv:
+```
 python -m venv env
-restricted environment where you can install modules safely
+```
+
 
 
 while/else:
