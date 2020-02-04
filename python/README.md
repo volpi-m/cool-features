@@ -24,7 +24,7 @@ class Foo():
     __yeet = 1   # private attribute
     _yoot = 2    # protected attribute
 
-    def __bar(): # private method
+    def __bar(self): # private method
         pass
 ```
 
@@ -138,3 +138,4 @@ list comprehension
 iterators
 operateur *
 zip, enumerate
+f-strings
