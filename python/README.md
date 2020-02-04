@@ -67,15 +67,49 @@ Create a string from a list with separator between each elements
 'Daleks, Cybermen, The Master'
 ```
 
+---
+Python has ternary operator:
+```python
+greetings = "H3110 W0RLD"
+yeeting = "geekos" if containdigit(greetings) else "nor geekos"
+```
+
+---
+Format your code like [PEP8](https://www.python.org/dev/peps/pep-0008/) standard by using the `black` code formatter.
+
+Install:
+```python
+pip install black
+```
+
+Use:
+```python
+black <fileName>
+```
+
 -------------------------------------------------------------------------------
 
 ## Some cool features
 
-virtualenv:
+### virtualenv
+
+virtualenv is a way to create an environment separated from your global environment. Meaning you can install modules without affecting your global env. It's really useful when dealing with differents versions of a same module.
+
+Create an env:
 ```
 python -m venv env
 ```
 
+Activate your newly created env:
+```
+. env/bin/activate      # works for bash based terminal
+. env/bin/activate.fish # works for fish
+```
+
+Deactivate your local env:
+```
+deactivate
+```
 
 
 while/else:
