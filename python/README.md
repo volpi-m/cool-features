@@ -1,40 +1,61 @@
-Gatling feature:
+# Cool features of python
 
-Python 2 n'est plus supporté depuis le 1er janvier
+## Gatling features:
 
+Python 2 isn't supported since january 1st 2020.
 
+From a base to another one:
 ```python
 >>> bin(10)
 0b1010
 >>> hex(10)
 0xa
+>>> oct(10)
+0o12
 >>> int(0xa, 16)
 10
 ```
 
-
 Protection of fields in classes:
-__ = private
-_ = public
+```python
+class Foo():
+    __yeet = 1   # private attribute
+    _yoot = 2    # protected attribute
 
+    def __bar(): # private method
+        pass
+```
 
+Get ascii value of character and vice-versa
 ```python
 >>> ord('a')
 97
 >>> chr(97)
 'a'
 ```
-Return plusieurs elmt:
-`return a, b, c, d`
 
-"hello world".split(" ") = ["hello", "world"]
+Return multiple elements in a single return statement:
+```python
+def returnMany():
+    return 1, 2, 3, 4
+```
 
-On peux mettre des types explicitement dans les fonctions python
+Split a string:
+```python
+>>> "hello world".split(" ")
+['hello', 'world']
+```
+
+Define explicitly types in function:
+```python
 def yeet(a: float, b: int = 0) -> int:
     return a + b
+```
 
-", ".join(["Nani"])
-
+```python
+>>> ", ".join(["Daleks", "Cybermen", "The Master"])
+'Daleks, Cybermen, The Master'
+```
 -------------------------------------------------------------------------------
 
 venv:
