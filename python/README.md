@@ -48,15 +48,19 @@ Split a string:
 
 Define explicitly types in function:
 ```python
-def yeet(a: float, b: int = 0) -> int:
+def add(a: int, b: int = 0) -> int:
     return a + b
 ```
 
+Create a string from a list with separator between each elements
 ```python
 >>> ", ".join(["Daleks", "Cybermen", "The Master"])
 'Daleks, Cybermen, The Master'
 ```
+
 -------------------------------------------------------------------------------
+
+## Some cool features
 
 venv:
 python -m venv env
