@@ -22,11 +22,32 @@ def firstn(m):
         yield n
         n += 1
 
+
 def main():
-    for i in FirstN(10):
+    """
+    for i in firstn(10):
         print(i)
-    for i in FirstN(10):
+    for i in firstn(10):
         print(i)
+    """
+    a = [x * x * x for x in range(1, 11)]
+    print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 if __name__ == "__main__":
     main()

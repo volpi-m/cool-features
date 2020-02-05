@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-user = "Pro Yeeter"
+user = "Casu"
 
 
 def decorate(func):
@@ -18,13 +18,13 @@ def decorate(func):
     return nope
 
 
-# @decorate
+#@decorate
 def yeet(*args):
     print("Yeeting ", end="")
     print(", ".join(args))
 
 
-# yeet("a", "b", "c", "d")
+#yeet("a", "b", "c", "d")
 
 
 class Plouf:
@@ -43,15 +43,15 @@ class Plouf:
         print("Gonna splash !")
 
 
-# Plouf().splash()
-# Plouf.splash()
+#Plouf().splash()
+#Plouf.splash()
 
-# Plouf().notAStaticMethod()
-# Plouf.notAStaticMethod()
+#Plouf().notAStaticMethod()
+#Plouf.notAStaticMethod()
 
-Plouf.pilou().splash()
+#Plouf.pilou().splash()
 
-"""
+
 class Pluf(Plouf):
 
     def notAStaticMethod(self):
@@ -65,7 +65,9 @@ Pluf().splash()
 Pluf.splash()
 
 Pluf().notAStaticMethod()
-#Pluf.notAStaticMethod()
-"""
+Pluf.notAStaticMethod(Pluf())
 
-print(locals())
+
+
+
+

@@ -6,6 +6,8 @@ def main():
     for s, c in zip(square, cube):
         print(f"square: {s}, cube: {c}")
 
+    for i in square:
+        pass
     for i, val in enumerate(square):
         print(f"i = {i}, val = {val}")
 

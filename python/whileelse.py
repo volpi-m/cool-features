@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
 def main():
-    i = 0
-    while i < 10:
+    i = 10
+    while i < 5:
         print(i)
         i += 1
     else:
-        print("i > 10")
+        print("i > 5")
 
-    for j in range(10):
+    for j in range(5):
         print(j)
     else:
         print("ouais cool")
@@ -22,3 +22,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
