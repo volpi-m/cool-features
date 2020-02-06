@@ -155,7 +155,7 @@ Yeet
 
 ## Generator
 
-A generator is a function (or a classe) that behave almost like an iterator.
+A generator is a function (or a class) that behave almost like an iterator.
 You can create a generator by using the `yield` keyword (not `yeet`, be careful)
 ```python
 def squaredNumbers(nums):
@@ -179,19 +179,31 @@ List comprehension are generators passed in a list constructor (meaning those br
 
 ## Decorators
 
-pas la même chose que le DecoratorPattern
-permet de modifier des fonctions et méthodes en figeant la fonction
+Must not be missunderstood as the Decorator design pattern.
 
-simple methode:
-in a.foo(), a is bound to foo
-
-class method:
-A is bound to foo
+TODO
 
 
 ## Operator overloading
 
 You can overload operators for you own classes. That's the reason why you can add 2 strings.
+
+```python
+class Foo():
+    def __init__(self):
+        self.nb = nb
+
+    def __add__(self, other):       # Overload the '+' overator
+        return self.nb + other.nb
+
+    def __bool__(self):             # Called when passed in a condition
+        return True if self.nb != 0 else False
+
+    def __str__(self):              # Calles when transformed to string
+        return f"Number = {self.nb}"
+```
+
+You can overload many operators: `__add__`, `__sub__`, `__lt__`, `__ge__`, `__ne__` and so on.
 
 
 ## Itertools
